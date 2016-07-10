@@ -6,7 +6,7 @@ int a,p,i,j,count=0;
 clrscr();
 printf("\n Enter the snumber of students:");
 scanf("%d",&a);
-pair=2*a;
+p=2*a;
 for(i=0;i<p;i++)
 {
 for(j=i+1;j<=p;j++)
