@@ -14,6 +14,6 @@ int main(){
     int num;
     scanf("%d",&num);
     clrscr();
-    toh(num,'S','E','T');
+    toh(num,'A','C','P');
     return 0;
 }
