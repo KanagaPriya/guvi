@@ -2,47 +2,47 @@
 #include<conio.h>
 void main()
 {
-int a,b,c[50],d[50],n,t;
+int i,j,a[50],b[50],n,t;
 clrscr();
-for(a=0;a<n;a++)
+scanf("\n %d",&n);
+for(i=0;i<n;i++)
 {
-scanf("%d",&c[a]);
-c[a]=d[b];
+scanf("\n %d",&a[i]);
+a[i]=b[i];
 }
-for(b=0;b<n;b++)
+for(j=0;j<n;j++)
 {
-scanf("%d",&c[b]);
+scanf("\n %d",&a[j]);
 }
-for(a=0;a<n;a++)
+for(i=0;i<n;i++)
 {
-for(b=0;b<n;b++)
+for(j=0;j<n;j++)
 {
-if(d[a]>c[b])
+if(b[i]>b[j])
 {
-t=c[a];
-c[a]=c[b];
-c[b]=t;
-t=d[a];
-c[a]=d[b];
-d[b]=t;
+t=a[i];
+a[i]=a[j];
+a[j]=t;
+t=b[i];
+b[i]=b[j];
+b[j]=t;
 }
-else if(d[a]==d[a+1])
+else if(b[i]==b[i+1])
 {
-if(c[a]>c[b])
+if(a[i]>a[j])
 {
-t=c[a];
-c[a]=c[b];
-c[b]=t;
+t=a[i];
+a[i]=a[j];
+a[j]=t;
 }
 }
 }
-
 }
-for(a=0;a<n;a++)
+for(i=0;i<n;i++)
 {
-printf("%d",c[a]);
+printf("\n %d",a[i]);
 }
+getch();
 }
-
    
 
