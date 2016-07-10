@@ -1,11 +1,11 @@
+
+
 #include <stdio.h>
-#include<conio.h>
 
 int main()
 {
     char str[100][100];
     int n,i,min=1000001,j,index,flag=0;
-    clrscr();
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("\n%[^\n]s",str[i]);
@@ -41,6 +41,4 @@ int main()
     }
     return 0;
 }
-
-    Status API Training Shop Blog About 
 
