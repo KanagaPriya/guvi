@@ -2,6 +2,7 @@
 #include<conio.h>
 void add(node* *hd, int v){
 node* curr = *hd;
+clrscr();
 if(curr == NULL){
     curr = (node*)malloc(sizeof(node));
     curr->value = v;
